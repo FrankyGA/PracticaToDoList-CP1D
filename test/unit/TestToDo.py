@@ -2,12 +2,12 @@
 import warnings
 import unittest
 import boto3
-from moto import mock_dynamodb2_deprecated
+from moto import mock_dynamodb2
 import sys
 import os
 import json
 
-@mock_dynamodb2_deprecated
+@mock_dynamodb2
 class TestDatabaseFunctions(unittest.TestCase):
     def setUp(self):
         print ('---------------------')
