@@ -111,7 +111,7 @@ pipeline {
             }
         }
         stage('Declarative: Post Actions') {
-            agent { label 'master' }
+            agent { label 'principal' }
             steps {
                 echo '¡Ejecución de la pipeline finalizada!'
                 sh 'whoami'
